@@ -29,7 +29,9 @@ function main() {
         // TODO: trim each element of this
        let tableHeader = makeSemicolonSeparated($(this).text()).split(';');
        // taking advantage of the empty element at beginning of array
-       tableHeader.unshift('Parcel Number');
+       tableHeader[0] = 'Parcel Number';
+       // getting rid of empty element at end of array
+       tableHeader.pop();
        textToWrite.push(tableHeader);
       } else {
         // TODO: clean this input
@@ -44,7 +46,9 @@ function main() {
         });
 
         // taking advantage of the empty element at beginning of array
-        csvRow.unshift(parcelNumber);
+        csvRow[0] = parcelNumber;
+        // removing empty element
+        csvRow.pop(); 
         textToWrite.push(csvRow);
       }
     });
