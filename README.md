@@ -4,8 +4,8 @@ This is a Node application that scrapes the Fulton County Tax Office's property 
 Cheerio is used to extract HTML elements and fast-csv is used to read and write csv files. This uses ES6 syntax extensively.
 
 # Getting Started #
-`git clone https://github.com/chrisdobbins/housing-justice.git`
-`npm install`
+- `git clone https://github.com/chrisdobbins/housing-justice.git`
+- `npm install`
 
 # Background #
 
