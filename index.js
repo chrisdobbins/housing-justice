@@ -27,7 +27,6 @@ function main() {
       scrapePage(formatForRequest(parcelId));
     })
     .on('end', () => {
-       csvStream.end();
     })
     .on('error', (err) => {
         console.log('error reading csv: ', err);
@@ -118,7 +117,7 @@ const options = {
 }
 
 function extractParcelIdFrom(queryParam) {
-  console.log(queryParam.replace(/[\+]+/, ''));
+  return queryParam.replace(/[\+]+/, '');
 }
 
 function isDollarAmount(value) {
