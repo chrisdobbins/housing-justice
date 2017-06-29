@@ -1,10 +1,14 @@
 # About #
 This is a Node application that scrapes the Fulton County Tax Office's property records for some of the parcel IDs listed in the file `Harbour_addresses_v8.csv`. As a lot of the properties are outside of Fulton County, `extract-from-csv.js` is a script that pulls the Atlanta addresses from `Harbour_addresses_v8`. Some manual cleaning was done to correct multiple incomplete parcel IDs and one duplicate; the cleaned file is called `Harbour_ATL_addresses-CLEAN.csv`.  
 ## Technologies Used ##
-Cheerio is used to extract HTML elements and fast-csv is used to read and write csv files. This uses ES6 syntax extensively.
+- Node.js v7.0.0
+- Cheerio is used to extract HTML elements.
+- fast-csv is used to read and write csv files.
+- Note: This extensively uses ES6 syntax.
 
 # Getting Started #
 - `git clone https://github.com/chrisdobbins/housing-justice.git`
+- `cd housing-justice`
 - `npm install`
 
 # Background #
